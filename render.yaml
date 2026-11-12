@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: vpngate-xray
+    plan: free
+    region: singapore
+    dockerfilePath: Dockerfile
+    buildCommand: make
+    startCommand: start
+    healthCheckPath: /health
